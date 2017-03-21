@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8"/>
-<LINK rel="stylesheet" type="text/css" href="css/hotel_serch_screen.css">
+<LINK rel="stylesheet" type="text/css" href="css/serchHotelScreen.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <script>
 //数字を３桁に区切るメソッド
@@ -55,14 +55,12 @@ $(function() {
 <title>ホテル検索画面</title>
 </head>
 <body>
-
-<h1>ホテル検索</h1>
-
- <FORM  method=get>
-一泊料金：<INPUT type='text' id="price"  value=''>以下
-<BR>
-<INPUT type='button' id="request"  value='検索'>
-</FORM>
-<div id="hotel"></div>    
+	<h1>ホテル検索</h1>
+	 <FORM  method=get>
+		一泊料金：<INPUT type='text' id="price"  value=''>以下
+		<BR>
+		<INPUT type='button' id="request"  value='検索'>
+	</FORM>
+	<div id="hotel"></div>    
 </body>
 </html>

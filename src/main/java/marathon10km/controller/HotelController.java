@@ -1,4 +1,4 @@
-package com.example.controller;
+package marathon10km.controller;
 
 import java.util.List;
 
@@ -8,13 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.domain.Hotel;
-import com.example.service.HotelService;
-
+import marathon10km.domain.Hotel;
+import marathon10km.service.HotelService;
 import net.arnx.jsonic.JSON;
-
-
-
 
 @Controller
 public class HotelController {
@@ -25,9 +21,9 @@ public class HotelController {
 	/**
 	 *フロント画面を表示
 	 */
-	@RequestMapping("serch_hotels")
+	@RequestMapping("serchHotels")
 	String inputForm() {	   
-	 return "serch_hotels";
+	 return "serchHotels";
 	}
 	/**
 	 *フロント画面から値を取得し、ホテルリストを返却
@@ -41,7 +37,4 @@ public class HotelController {
 		List<Hotel> hotels=service.SerchHotel(hotel.getPrice());   
 	 return hotels;
 	}
-
-	
-
 }

@@ -1,4 +1,4 @@
-package com.example.domain;
+package marathon10km.domain;
 
 import javax.persistence.*;
 import lombok.Getter;
